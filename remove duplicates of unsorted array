@@ -1,0 +1,11 @@
+def remdup(arr, n):
+    mp={i:0 for i in arr}
+    print('[',end=" ")
+    for i in range(n):
+        if mp[arr[i]] == 0:
+            print(arr[i],end=",")
+            mp[arr[i]]=1
+    print(']',end=" ")    
+arr = [1,2,5,1,7,2,4,2]
+n=len(arr)
+remdup(arr, n)
